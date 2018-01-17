@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/13/user/631285).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Дубко](https://up.htmlacademy.ru/adaptive/13/user/345007).
 
 ---
 
