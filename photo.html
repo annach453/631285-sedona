@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SEDONA</title>
+  <title>SEDONA | Фото и видео</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <a class="site-links__item-link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-links__item">
-            <a class="site-links__item-link" href="#">HTML Academy</a>
+            <a class="site-links__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -33,7 +33,7 @@
     <button class="header__toggle">Открыть меню</button>
   </header>
   <div class="hero">
-    <div class="hero-wrapper">
+    <div class="hero__wrapper">
       <img class="header__title-text" src="http://placehold.it/320x223?text=Sedona" width="320" height="223" alt="Sedona">
     </div>
   </div>
@@ -115,22 +115,22 @@
         <h2 class="text-info__title">Все еще сомневаетесь?</h2>
         <p class="text-info__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
-      <div class="video__item">
+      <div class="video__player">
         <img class="video__frame" src="http://placehold.it/320x200" width="320" height="200" alt="Future video">
-        <div class="video__control control">
-          <div class="control__range-block">
-            <div class="control__range"></div>
+        <div class="video__control-wrapper">
+          <div class="video__range-block">
+            <div class="video__range"></div>
           </div>
-          <div class="control__panel-block">
-            <a class="control__button control__button--reload" href="">
-              <img class="photo__image" src="http://placehold.it/16x20" width="16" height="20" alt="Reload">
-            </a>
-            <a class="control__button control__button--subtitles" href="">
-              <img class="photo__image" src="http://placehold.it/32x20" width="32" height="20" alt="Subtitles">
-            </a>
-            <a class="control__button control__button--fullscreen" href="">
-              <img class="photo__image" src="http://placehold.it/20x20" width="20" height="20" alt="Fullscreen">
-            </a>
+          <div class="video__controls">
+            <button class="video__control video__control--reload">
+              <span class="video__control-icon video__control-icon--reload"></span>
+            </button>
+            <button class="video__control video__control--subtitles">
+              <span class="video__control-icon video__control-icon--subtitles"></span>
+            </button>
+            <button class="video__control video__control--fullscreen">
+              <span class="video__control-icon video__control-icon--fullscreen"></span>
+            </button>
           </div>
         </div>
       </div>
