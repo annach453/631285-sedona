@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SEDONA | Оставьте отзыв</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="http://placehold.it/102x83?text=LOGO" width="102" height="83" alt="Логотип Седона">
+    </a>
+    <nav class="header__nav nav nav--opened">
+      <button class="nav__toggle">Закрыть меню</button>
+      <div class="nav__wrapper">
+        <ul class="nav__list site-links">
+          <li class="site-links__item site-links__item--active">
+            <a class="site-links__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="site-links__item">
+            <a class="site-links__item-link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-links__item">
+            <span class="site-links__item-link">Форма отзыва</span>
+          </li>
+          <li class="site-links__item">
+            <a class="site-links__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <button class="header__toggle">Открыть меню</button>
+  </header>
+  <div class="hero">
+    <div class="hero__wrapper">
+      <img class="header__title-text" src="http://placehold.it/320x223?text=Sedona" width="320" height="223" alt="Sedona">
+    </div>
+  </div>
+  <main class="main">
+    <div class="main__text-info text-info">
+      <h1 class="text-info__title">Оставьте свой отзыв</h1>
+      <p class="text-info__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <section class="main__form">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-form__wrapper">
+          <h2 class="feedback-form__block-title">Представьтесь:</h2>
+          <div class="feedback-form__block feedback-form__block--inline">
+            <label class="feedback-form__label" for="name">Имя
+              <span aria-hidden="true">*</span>:
+            </label>
+            <input class="feedback-form__input" type="text" placeholder="Петр" name="name" id="name" required>
+          </div>
+          <div class="feedback-form__block feedback-form__block--inline">
+            <label class="feedback-form__label" for="surname">Фамилия
+              <span aria-hidden="true">*</span>:
+            </label>
+            <input class="feedback-form__input" type="text" placeholder="Иванов" name="surname" id="surname" required>
+          </div>
+          <div class="feedback-form__block feedback-form__block--inline">
+            <label class="feedback-form__label" for="patronymic">
+              Отчество:
+            </label>
+            <input class="feedback-form__input" type="text" placeholder="Александрович" name="patronymic" id="patronymic">
+          </div>
+        </div>
+        <div class="feedback-form__wrapper form-field__wrapper--vertical">
+          <h2 class="feedback-form__block-title">Контактная информация:</h2>
+          <div class="feedback-form__block">
+            <label class="feedback-form__label feedback-form__label--contacts" for="phone">Контактный телефон
+              <span aria-hidden="true">*</span>:</label>
+            <div class="feedback-form__input-wrapper">
+              <input class="feedback-form__input" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="feedback-form__icon feedback-form__icon--phone"></span>
+            </div>
+          </div>
+          <div class="feedback-form__block">
+            <label class="feedback-form__label feedback-form__label--contacts" for="email">Электронная почта
+              <span aria-hidden="true">*</span>:</label>
+            <div class="feedback-form__input-wrapper">
+              <input class="feedback-form__input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+              <span class="feedback-form__icon feedback-form__icon--envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-form__wrapper">
+          <h2 class="feedback-form__block-title">Ваше общее впечатление:</h2>
+          <label class="feedback-form__radio-label">
+            <input class="feedback-form__radio feedback-form__radio--checked" type="radio" name="impression" value="positive" checked>Скорее положительное
+          </label>
+          <label class="feedback-form__radio-label">
+            <input class="feedback-form__radio" type="radio" name="impression" value="negative">Скорее отрицательное
+          </label>
+          <label class="feedback-form__radio-label">
+            <input class="feedback-form__radio" type="radio" name="impression" value="unanswered">Затрудняюсь ответить
+          </label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <h2 class="feedback-form__block-title">Посещенные достопримечательности:</h2>
+          <label class="feedback-form__checkbox-label">
+            <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Devil's bridge"
+              checked>Мост Дьявола
+          </label>
+          <label class="feedback-form__checkbox-label">
+            <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Slide-park"
+              checked>Слайд-парк
+          </label>
+          <label class="feedback-form__checkbox-label">
+            <input class="feedback-form__checkbox" type="checkbox" name="attraction" value="Bell mountain">Гора-Колокол
+          </label>
+          <label class="feedback-form__checkbox-label">
+            <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Red rocks"
+              checked>Красные скалы
+          </label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <label class="feedback-form__textarea-label" for="message">Опишите свои эмоции:</label>
+          <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <div class="feedback-form__wrapper">
+          <button type="submit" class="feedback-form__button button">Отправить отзыв</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__social social">
+      <h2 class="social__title">#visitSEDONA</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link" href="#">
+            <img class="social__icon" src="http://placehold.it/46x48?text=Twitter" width="46" height="48" alt="Twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link" href="#">
+            <img class="social__icon" src="http://placehold.it/46x48?text=facebook" width="46" height="48" alt="Facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link" href="#">
+            <img class="social__icon" src="http://placehold.it/46x48?text=Youtube" width="46" height="48" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">
+      Разработано
+      <img src="http://placehold.it/27x34?text=HTMLAcademy" width="27" height="34" alt="HTML Academy">
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__item modal__item--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button">Ок</button>
+    </div>
+    <div class="modal__item modal__item--success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button button">Закрыть окно</button>
+    </div>
+  </div>
+</body>
+
+</html>
