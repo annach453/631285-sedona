@@ -1,5 +1,21 @@
-.rbutton {
+.button {
+  width: 280px;
+  padding: 16px 45px;
+  border: 0;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+  background: @primary-color;
+
+  &:hover {
+    background: @primary-color-hover;
+  }
+
+  &:active {
+    background: @primary-color-active;
+  }
+
+  &:disabled {
+    background: @primary-color-disabled;
+  }
 }

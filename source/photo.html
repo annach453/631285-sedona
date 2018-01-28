@@ -5,13 +5,11 @@
   <meta charset="UTF-8">
   <title>SEDONA | Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=320, initial-scale=1">
 </head>
 
-<body>
+<body class="page">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="http://placehold.it/102x83?text=LOGO" width="102" height="83" alt="Логотип Седона">
-    </a>
     <nav class="header__nav nav nav--opened">
       <button class="nav__toggle">Закрыть меню</button>
       <div class="nav__wrapper">
@@ -31,10 +29,14 @@
         </ul>
       </div>
     </nav>
+    <a class="header__logo" href="index.html">
+      <img src="http://placehold.it/102x83?text=LOGO" width="102" height="83" alt="Логотип Седона">
+    </a>
     <button class="header__toggle">Открыть меню</button>
   </header>
   <div class="hero">
     <div class="hero__wrapper">
+      <img class="hero__image" class="hero__image" src="/img/text-sedona.svg" width="230" height="39">
     </div>
   </div>
   <main class="main">
@@ -45,7 +47,7 @@
     <section class="main__photo photo">
       <div class="photo__wrapper">
         <div class="photo__item">
-          <figure>
+          <figure class="photo__figure">
             <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
             <figcaption class="photo__info">
               <h2 class="photo__title">
@@ -61,7 +63,7 @@
           </button>
         </div>
         <div class="photo__item">
-          <figure>
+          <figure class="photo__figure">
             <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
             <figcaption class="photo__info">
               <h2 class="photo__title">
@@ -77,7 +79,7 @@
           </button>
         </div>
         <div class="photo__item">
-          <figure>
+          <figure class="photo__figure">
             <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
             <figcaption class="photo__info">
               <h2 class="photo__title">
@@ -93,7 +95,7 @@
           </button>
         </div>
         <div class="photo__item">
-          <figure>
+          <figure class="photo__figure">
             <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Photo">
             <figcaption class="photo__info">
               <h2 class="photo__title">
@@ -113,7 +115,7 @@
     <section class="main__video video">
       <div class="video__text-info text-info">
         <h2 class="text-info__title">Все еще сомневаетесь?</h2>
-        <p class="text-info__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="text-info__intro text-info__intro--primary">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </div>
       <div class="video__player">
         <img class="video__frame" src="http://placehold.it/320x200" width="320" height="200" alt="Future video">
