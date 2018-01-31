@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>SEDONA | Оставьте отзыв</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=320, initial-scale=1">
 </head>
 
-<body>
+<body class="page">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="http://placehold.it/102x83?text=LOGO" width="102" height="83" alt="Логотип Седона">
-    </a>
     <nav class="header__nav nav nav--opened">
-      <button class="nav__toggle">Закрыть меню</button>
+      <button class="nav__toggle"></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-links">
           <li class="site-links__item site-links__item--active">
@@ -30,17 +29,20 @@
         </ul>
       </div>
     </nav>
-    <button class="header__toggle">Открыть меню</button>
+    <a class="header__logo" href="index.html">
+      <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+    </a>
+    <button class="header__toggle"></button>
   </header>
   <div class="hero">
     <div class="hero__wrapper">
-      <img class="header__title-text" src="http://placehold.it/320x223?text=Sedona" width="320" height="223" alt="Sedona">
+      <img class="hero__image" src="./img/text-sedona.svg" width="230" height="39">
     </div>
   </div>
   <main class="main">
     <div class="main__text-info text-info">
       <h1 class="text-info__title">Оставьте свой отзыв</h1>
-      <p class="text-info__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="text-info__intro text-info__intro--primary">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
     <section class="main__form">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -130,31 +132,31 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link" href="#">
-            <img class="social__icon" src="http://placehold.it/46x48?text=Twitter" width="46" height="48" alt="Twitter">
+            <img class="social__icon" src="./img/icon-twitter.svg" width="46" height="48" alt="Twitter">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link" href="#">
-            <img class="social__icon" src="http://placehold.it/46x48?text=facebook" width="46" height="48" alt="Facebook">
+            <img class="social__icon" src="./img/icon-facebook.svg" width="46" height="48" alt="Facebook">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link" href="#">
-            <img class="social__icon" src="http://placehold.it/46x48?text=Youtube" width="46" height="48" alt="Youtube">
+            <img class="social__icon" src="./img/icon-youtube.svg" width="46" height="48" alt="Youtube">
           </a>
         </li>
       </ul>
     </div>
     <div class="footer__copyright">
       Разработано
-      <img src="http://placehold.it/27x34?text=HTMLAcademy" width="27" height="34" alt="HTML Academy">
+      <img src="./img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
     </div>
   </footer>
   <div class="modal">
     <div class="modal__item modal__item--error">
       <h2 class="modal__title">Что-то пошло не так!</h2>
       <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button">Ок</button>
+      <button class="modal__button button button--small">Ок</button>
     </div>
     <div class="modal__item modal__item--success">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
