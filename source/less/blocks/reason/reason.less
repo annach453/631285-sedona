@@ -1,4 +1,47 @@
+.reason {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason__item {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
 .reason__item-title {
   font-size: 18px;
   line-height: 1.44;
+}
+
+.reason__icon svg {
+  width: 40px;
+  height: 40px;
+  fill: @primary-color;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    flex-direction: row;
+  }
+
+  .reason__item {
+    flex-direction: column;
+    width: 256px;
+    padding: 45px 20px;
+    text-align: center;
+  }
+
+  .reason__icon svg {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason__item {
+    flex-direction: column;
+    width: 400px;
+    padding: 45px 20px;
+  }
 }

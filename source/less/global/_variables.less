@@ -7,4 +7,15 @@
 @middle-gray-color: #eeeeee;
 @dark-gray-color: #b2b2b2;
 @black-color: #000000;
+@link-color: rgba(0, 0, 0, 30%);
 @font-color: #333333;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

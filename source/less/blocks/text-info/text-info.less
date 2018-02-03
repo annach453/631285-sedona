@@ -1,26 +1,22 @@
 .text-info {
-  padding: 29px 17px;
+  text-align: center;
+  text-transform: uppercase;
 
-  &--primary {
-    color: @white-color;
-    background-color: @primary-color;
-  }
-
-  &--secondary {
-    padding: 12px 17px;
-    background-color: @middle-gray-color;
+  &--primary .text-info__intro {
+    line-height: 1.86;
   }
 }
 
 .text-info__title {
   font-size: 18px;
   line-height: 1.44;
+  color: @black-color;
+
+  &--white {
+    color: @white-color;
+  }
 }
 
 .text-info__intro {
   margin: 0;
-
-  &--primary {
-    line-height: 1.86;
-  }
 }

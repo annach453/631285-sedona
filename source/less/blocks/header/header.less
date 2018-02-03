@@ -1,3 +1,94 @@
-.header__toggle {
-  background-image: url("../img/icon-menu.svg");
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: @white-color;
+}
+
+.header__item {
+  background: @primary-color;
+
+  &--logo {
+    order: 5;
+    height: 55px;
+    text-align: center;
+    background: @white-color;
+  }
+}
+
+.header__button {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border: 0;
+  background-color: inherit;
+  background-repeat: no-repeat;
+
+  &--open {
+    bottom: 18px;
+    right: 20px;
+    fill: @primary-color;
+  }
+
+  &--close {
+    top: 17px;
+    right: 20px;
+    fill: @white-color;
+    background: transparent;
+  }
+}
+
+.header__item-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 2.22;
+  color: @white-color;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    color: @primary-color-hover;
+  }
+
+  &:active {
+    background-color: @primary-color-active;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+    background: @white-color;
+  }
+
+  .header__item {
+    background-color: inherit;
+
+    &--logo {
+      order: 0;
+    }
+  }
+
+  .header__button--open,
+  .header__button--close {
+    display: none;
+  }
+
+  .header__item-link {
+    color: @black-color;
+
+    &:hover {
+      color: @primary-color;
+      background-color: @white-color;
+    }
+
+    &:active {
+      color: @link-color;
+    }
+  }
 }
