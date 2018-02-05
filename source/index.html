@@ -9,46 +9,46 @@
 </head>
 
 <body class="page">
-  <header class="header header--opened">
-    <button class="header__button header__button--close">
+  <header class="header">
+    <button class="nav__button nav__button--close">
       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
         <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"
         />
       </svg>
     </button>
-    <div class="header__item header__item--active">
-      <span class="header__item-link">Главная</span>
-    </div>
-    <div class="header__item">
-      <a class="header__item-link" href="photo.html">Фото и видео</a>
-    </div>
-    <div class="header__item header__item--logo">
-      <a class="header__logo" href="index.html">
-        <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
-    </div>
-    <div class="header__item">
-      <a class="header__item-link" href="form.html">Форма отзыва</a>
-    </div>
-    <div class="header__item">
-      <a class="header__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
-    </div>
-    <button class="header__button header__button--open">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-        <g>
-          <rect width="22.928" height="3.964" />
-          <rect y="9.009" width="22.928" height="3.964" />
-          <rect y="18.018" width="22.928" height="3.964" />
-        </g>
-      </svg>
-    </button>
+    <ul class="header__nav nav">
+      <li class="nav__item nav__item--active">
+        <span class="nav__item-link">Главная</span>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item-link" href="photo.html">Фото и видео</a>
+      </li>
+      <li class="nav__item nav__item--logo">
+        <a class="nav__logo" href="index.html">
+          <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        </a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item-link" href="form.html">Форма отзыва</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </li>
+      <button class="nav__button nav__button--open">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964" />
+            <rect y="9.009" width="22.928" height="3.964" />
+            <rect y="18.018" width="22.928" height="3.964" />
+          </g>
+        </svg>
+      </button>
+    </ul>
   </header>
-  <div class="hero">
-    <div class="hero__wrapper hero__wrapper--index">
-      <img class="hero__image" src="./img/text-sedona-index.svg" width="280" height="213">
-    </div>
+  <div class="hero hero--index">
+    <img class="hero__image" src="./img/text-sedona-index.svg" width="280" height="213">
   </div>
   <main class="main">
     <div class="main__text-info text-info text-info--primary">
@@ -204,15 +204,13 @@
       </div>
     </section>
     <section class="main__hotel-search hotel-search">
-      <div class="hotel-search__wrapper">
-        <h2 class="hotel-search__title">
-          Заинтресовались?
-        </h2>
-        <p class="hotel-search__text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
-        <button class="hotel-search_button button" type="button">Найти гостиницу</button>
-      </div>
+      <h2 class="hotel-search__title">
+        Заинтересовались?
+      </h2>
+      <p class="hotel-search__text">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <button class="hotel-search_button button" type="button">Найти гостиницу</button>
       <div class="hotel-search__map">
       </div>
     </section>

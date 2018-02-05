@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .feedback-form__wrapper {
@@ -9,10 +13,54 @@
   border-top: 1px solid @primary-color-disabled;
   box-sizing: border-box;
 
-  &--columns {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    border: 0;
+    padding: 56px 0 0;
+
+    &--impression {
+      order: -1;
+    }
+
+    &--small {
+      width: 324px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+
+    &--wide {
+      width: 960px;
+    }
+  }
+}
+
+.feedback-form__wrapper--columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+
+    .feedback-form__block {
+      width: 100%;
+    }
+
+    .feedback-form__checkbox-label {
+      width: 324px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .feedback-form__block {
+      width: 480px;
+    }
+
+    .feedback-form__checkbox-label {
+      width: 240px;
+    }
   }
 }
 
@@ -24,7 +72,7 @@
 
 .feedback-form__input {
   border: 0;
-  background-color: @gray-color;
+  background-color: @bg-color;
 
   &:hover {
     background-color: @primary-color-disabled;
@@ -38,7 +86,7 @@
 
 .feedback-form__textarea {
   border: 0;
-  background-color: @gray-color;
+  background-color: @bg-color;
 
   &:hover {
     background-color: @primary-color-disabled;
@@ -51,61 +99,13 @@
 }
 
 .feedback-form__radio-label {
-  .clearfix();
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .feedback-form__textarea-label {
   display: block;
-}
-
-@media (min-width: @tablet-width) {
-  .feedback-form {
-    flex-direction: row;
-  }
-
-  .feedback-form__wrapper {
-    width: 324px;
-    border: 0;
-    padding: 56px 0 0;
-
-    &--impression {
-      order: -1;
-    }
-
-    &--wide {
-      width: 648px;
-    }
-  }
-
-  .feedback-form__wrapper--columns {
-    flex-direction: row;
-
-    .feedback-form__block {
-      width: 100%;
-    }
-
-    .feedback-form__checkbox-label {
-      width: 324px;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .feedback-form__wrapper {
-    width: 480px;
-
-    &--wide {
-      width: 960px;
-    }
-  }
-
-  .feedback-form__wrapper--columns {
-    .feedback-form__block {
-      width: 480px;
-    }
-
-    .feedback-form__checkbox-label {
-      width: 240px;
-    }
-  }
 }

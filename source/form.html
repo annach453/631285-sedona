@@ -9,32 +9,34 @@
 </head>
 
 <body class="page">
-  <header class="header header--opened">
-    <button class="header__button header__button--close">
+  <header class="header">
+    <button class="nav__button nav__button--close">
       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
         <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1"
         />
       </svg>
     </button>
-    <div class="header__item">
-      <a class="header__item-link" href="index.html">Главная</a>
-    </div>
-    <div class="header__item">
-      <a class="header__item-link" href="photo.html">Фото и видео</a>
-    </div>
-    <div class="header__item header__item--logo">
-      <a class="header__logo" href="index.html">
-        <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
-    </div>
-    <div class="header__item header__item--active">
-      <span class="header__item-link">Форма отзыва</span>
-    </div>
-    <div class="header__item">
-      <a class="header__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
-    </div>
-    <button class="header__button header__button--open">
+    <ul class="header__nav nav nav--opened">
+      <li class="nav__item">
+        <a class="nav__item-link" href="index.html">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item-link" href="photo.html">Фото и видео</a>
+      </li>
+      <li class="nav__item nav__item--logo">
+        <a class="nav__logo" href="index.html">
+          <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        </a>
+      </li>
+      <li class="nav__item nav__item--active">
+        <span class="nav__item-link">Форма отзыва</span>
+      </li>
+      <li class="nav__item">
+        <a class="nav__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </li>
+    </ul>
+    <button class="nav__button nav__button--open">
       <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
         <g>
@@ -46,9 +48,7 @@
     </button>
   </header>
   <div class="hero">
-    <div class="hero__wrapper">
-      <img class="hero__image" src="./img/text-sedona.svg" width="230" height="39">
-    </div>
+    <img class="hero__image" src="./img/text-sedona.svg" width="230" height="39">
   </div>
   <main class="main">
     <div class="main__text-info text-info text-info--primary">
@@ -57,7 +57,7 @@
     </div>
     <section class="main__form">
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-form__wrapper">
+        <div class="feedback-form__wrapper feedback-form__wrapper--small">
           <h2 class="feedback-form__block-title">Представьтесь:</h2>
           <div class="feedback-form__block feedback-form__block--inline">
             <label class="feedback-form__label" for="name">Имя
@@ -78,7 +78,7 @@
             <input class="feedback-form__input" type="text" placeholder="Александрович" name="patronymic" id="patronymic">
           </div>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--wide feedback-form__wrapper--columns">
+        <div class="feedback-form__wrapper feedback-form__wrapper--columns">
           <h2 class="feedback-form__block-title">Контактная информация:</h2>
           <div class="feedback-form__block">
             <label class="feedback-form__label feedback-form__label--contacts" for="phone">Контактный телефон
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--impression">
+        <div class="feedback-form__wrapper feedback-form__wrapper--small feedback-form__wrapper--impression">
           <h2 class="feedback-form__block-title">Ваше общее впечатление:</h2>
           <label class="feedback-form__radio-label">
             <input class="feedback-form__radio feedback-form__radio--checked" type="radio" name="impression" value="positive" checked>Скорее положительное
@@ -109,7 +109,7 @@
             <input class="feedback-form__radio" type="radio" name="impression" value="unanswered">Затрудняюсь ответить
           </label>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--wide feedback-form__wrapper--columns">
+        <div class="feedback-form__wrapper feedback-form__wrapper--columns">
           <h2 class="feedback-form__block-title">Посещенные достопримечательности:</h2>
           <label class="feedback-form__checkbox-label">
             <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Devil's bridge"
@@ -127,11 +127,11 @@
               checked>Красные скалы
           </label>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--wide">
+        <div class="feedback-form__wrapper">
           <label class="feedback-form__textarea-label" for="message">Опишите свои эмоции:</label>
           <textarea class="feedback-form__textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <div class="feedback-form__wrapper feedback-form__wrapper--wide">
+        <div class="feedback-form__wrapper">
           <button type="submit" class="feedback-form__button button">Отправить отзыв</button>
         </div>
       </form>
