@@ -72,7 +72,7 @@
 
 .feedback-form__input {
   border: 0;
-  background-color: @bg-color;
+  background-color: @page-bg-color;
 
   &:hover {
     background-color: @primary-color-disabled;
@@ -80,13 +80,13 @@
 
   &:active {
     border: 2px solid @primary-color-disabled;
-    background-color: @white-color;
+    background-color: @content-bg-color;
   }
 }
 
 .feedback-form__textarea {
   border: 0;
-  background-color: @bg-color;
+  background-color: @page-bg-color;
 
   &:hover {
     background-color: @primary-color-disabled;
@@ -94,16 +94,12 @@
 
   &:active {
     border: 2px solid @primary-color-disabled;
-    background-color: @white-color;
+    background-color: @content-bg-color;
   }
 }
 
 .feedback-form__radio-label {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  .clearfix();
 }
 
 .feedback-form__textarea-label {
