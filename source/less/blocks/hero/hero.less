@@ -2,13 +2,16 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-}
-
-.hero__wrapper {
+  background-size: cover;
   padding: 52px 45px 67px;
   box-sizing: border-box;
+  text-align: center;
 
   &--index {
     padding: 90px 20px;
+
+    @media (min-width: @tablet-width) {
+      height: 518px;
+    }
   }
 }
