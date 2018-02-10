@@ -3,13 +3,27 @@
 }
 
 .main__text-info {
-  padding: 40px 20px;
+  padding: 30px 25px 12px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 80px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 76px 300px 58px;
+  }
+}
+
+.main__text-info--index {
+  @media (min-width: @desktop-width) {
+    padding: 40px 300px 36px;
+  }
 }
 
 .main__video {
   @media (min-width: @tablet-width) {
-    padding: 0 60px;
+    padding: 0 60px 9px;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,6 +32,8 @@
 }
 
 .main__form {
+  margin-top: -10px;
+
   @media (min-width: @tablet-width) {
     padding: 0 60px;
   }

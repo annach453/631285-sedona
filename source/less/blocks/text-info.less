@@ -1,0 +1,49 @@
+.text-info {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-info__intro {
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 21px;
+  }
+
+  &--index {
+    margin-top: 28px;
+    line-height: 26px;
+  }
+
+  &--primary {
+    margin-top: 26px;
+    line-height: 24px;
+  }
+}
+
+.text-info__title {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: @title-color;
+
+  &--white {
+    color: @content-bg-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.text-info__title--primary {
+  @media (min-width: @tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+
+.text-info__number {
+  margin: 10px 0;
+}

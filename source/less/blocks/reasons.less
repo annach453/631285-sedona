@@ -9,33 +9,51 @@
 }
 
 .reasons__item {
-  padding: 26px 17px;
+  padding: 25px 20px;
   box-sizing: border-box;
 
   &--primary {
+    padding: 30px 20px 24px;
     color: @content-bg-color;
     background-color: @primary-color;
   }
 
   &--secondary {
-    padding: 12px 17px;
+    padding: 15px 20px;
     background-color: @reasons-bg-color;
+  }
+
+  &--triangle {
+    padding-top: 45px;
   }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     width: 256px;
     height: 256px;
+    padding-top: 35px;
+
+    &--secondary {
+      order: 2;
+    }
+
+    &--last {
+      order: 1;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
+
+    &--primary {
+      padding-top: 42px;
+    }
   }
 }
 
 .reasons__list {
   margin: 0;
-  padding: 35px 20px;
+  padding: 23px 20px 21px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {

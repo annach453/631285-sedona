@@ -1,0 +1,154 @@
+.video__text-info {
+  padding: 22px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 20px 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 20px 81px;
+  }
+}
+
+.video__player {
+  box-sizing: border-box;
+  padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.video__frame {
+  width: 320px;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+.video__control-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: -44px 20px 0;
+  background-color: @page-bg-color;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 93px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    background-color: @video-range-block-color;
+  }
+}
+
+.video__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  padding: 0 23px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.video__control--reload {
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.video__range-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    background: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
+}
+
+.video__range {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin: 0 23px;
+  background-color: @video-range-color;
+  cursor: pointer;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 540px;
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 9px;
+    height: 9px;
+    top: -3px;
+    left: 15%;
+    border-radius: 50%;
+    background-color: @content-bg-color;
+  }
+}
+
+.video__src {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+.video__button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.video__icon {
+  fill: @video-button-color;
+
+  @media (min-width: @tablet-width) {
+    fill: @content-bg-color;
+  }
+}
+

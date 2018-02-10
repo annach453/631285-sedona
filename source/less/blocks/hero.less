@@ -1,0 +1,39 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 158px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background-size: cover;
+  }
+}
+
+.hero__image {
+  margin-top: -15px;
+  line-height: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    min-height: 78px;
+    margin: 95px 0 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 103px 0 120px;
+  }
+}
+
+.hero__image--index {
+  margin: 89px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 350px;
+    margin: 77px 0 90px;
+  }
+}
