@@ -5,23 +5,37 @@
   <meta charset="UTF-8">
   <title>SEDONA - городок в Аризоне, заслуживающий большего!</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=320, initial-scale=1">
-  <script>
-    function initMap() {
-      var uluru = { lat: 34.8697395, lng: -111.7609896 };
-      var map = new google.maps.Map(document.getElementById("map"), {
-        disableDefaultUI: true,
-        zoom: 7,
-        center: uluru
-      });
-      var image = "./img/icon-map-marker.svg";
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-        icon: image
-      });
-    }
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("./preview/sedona-index-mobile.jpg");
+      }
+
+      /* Планшет */
+
+      @media ( min-width: 768px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("./preview/sedona-index-tablet.jpg");
+        }
+      }
+
+      /* Десктоп */
+
+      @media ( min-width: 1200px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("./preview/sedona-index-desktop.png");
+        }
+      }
+    </style>
+    <link href="pixel_glass/styles.css" rel="stylesheet" type="text/css">
+    <script src="pixel_glass/script.js" type="text/javascript"></script>
+    <!-- // Pixel Glass -->
 </head>
 
 <body class="page">
@@ -36,7 +50,7 @@
     <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item nav__item--active">
-          <span class="nav__item-link">Главная</span>
+          <span class="nav__item-link nav__item-link--active">Главная</span>
         </li>
         <li class="nav__item">
           <a class="nav__item-link" href="photo.html">Фото и видео</a>
@@ -227,12 +241,11 @@
           Заинтересовались?
         </h2>
         <p class="hotel-search__text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в седоне
         </p>
         <button class="hotel-search_button button" type="button">Найти гостиницу</button>
       </div>
       <div class="hotel-search__map" id="map">
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmX4GPwNuEYY6SQY24gUiK6pHymTO1rcs&callback=initMap"></script>
       </div>
     </section>
   </main>
@@ -284,6 +297,23 @@
       </a>
     </div>
   </footer>
+  <script>
+    function initMap() {
+      var uluru = { lat: 34.8697395, lng: -111.7609896 };
+      var map = new google.maps.Map(document.getElementById("map"), {
+        disableDefaultUI: true,
+        zoom: 7,
+        center: uluru
+      });
+      var image = "./img/icon-map-marker.svg";
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmX4GPwNuEYY6SQY24gUiK6pHymTO1rcs&callback=initMap"></script>
 </body>
 
 </html>

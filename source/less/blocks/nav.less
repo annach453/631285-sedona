@@ -29,12 +29,10 @@
 
 .nav__item {
   display: flex;
-  //height: 56px;
   box-sizing: border-box;
   background: @primary-color;
 
   @media (max-width: (@tablet-width - 1px)) {
-
     &:nth-child(-n+5) {
       border-top: 1px solid @border-top-color;
     }
@@ -58,15 +56,37 @@
     border: 0;
     background-color: inherit;
   }
+}
 
-  &--logo {
-    order: 5;
-    text-align: center;
+.nav__item:hover,
+.nav__item:active {
+  background-color: @primary-color-hover;
+
+  @media (min-width: @tablet-width) {
+    background-color: @content-bg-color;
+  }
+}
+
+.nav__item--active:hover,
+.nav__item--active:active {
+  @media (min-width: @tablet-width) {
+    background-color: @content-bg-color;
+  }
+}
+
+
+.nav__item--logo {
+  order: 5;
+  text-align: center;
+  background: @content-bg-color;
+
+  &:hover,
+  &:active {
     background: @content-bg-color;
+  }
 
-    @media (min-width: @tablet-width) {
-      order: 0;
-    }
+  @media (min-width: @tablet-width) {
+    order: 0;
   }
 }
 
@@ -124,21 +144,32 @@
     font-size: 14px;
     line-height: 26px;
   }
+}
 
-  &:hover {
-    color: @primary-color-hover;
-
-    @media (min-width: @tablet-width) {
-      color: @primary-color;
-      background-color: @content-bg-color;
-    }
+.nav__item-link:hover {
+  @media (min-width: @tablet-width) {
+    color: @primary-color;
   }
+}
 
-  &:active {
-    background-color: @primary-color-active;
+.nav__item-link:active {
+  color: @text-color-active;
 
-    @media (min-width: @tablet-width) {
-      color: @link-color;
+  @media (min-width: @tablet-width) {
+    color: @link-color;
+  }
+}
+
+.nav__item-link--active {
+  @media (min-width: @tablet-width) {
+    color: @active-menu-item;
+
+    &:hover {
+      color: @active-menu-item-hover;
+    }
+
+    &:active {
+      color: @active-menu-item-down;
     }
   }
 }
