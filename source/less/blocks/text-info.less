@@ -11,8 +11,12 @@
   }
 
   &--index {
-    margin-top: 28px;
+    margin-top: 27px;
     line-height: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 28px;
+    }
   }
 
   &--primary {
@@ -22,17 +26,22 @@
 }
 
 .text-info__title {
-  margin: 10px 0;
+  margin: 11px 0 9px;
   font-size: 18px;
   line-height: 26px;
   color: @title-color;
 
-  &--white {
-    color: @content-bg-color;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 21px;
+  }
+
+  &--white {
+    color: @content-bg-color;
+
+    @media (min-width: @desktop-width) {
+      width: 210px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -41,6 +50,12 @@
     margin-top: 35px;
     margin-bottom: 30px;
     font-size: 30px;
+  }
+}
+
+.text-info__title--small {
+  @media (min-width: @desktop-width) {
+    margin: 11px 72px 9px;
   }
 }
 

@@ -6,31 +6,39 @@
   background-color: @border-top-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: bottom center;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     background-size: cover;
   }
+
+  &--index {
+    background-size: cover;
+  }
 }
 
 .hero__image {
-  margin-top: -15px;
+  margin-top: -16px;
+  width: 231px;
+  height: 40px;
   line-height: 0;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
-    min-height: 78px;
+    width: 460px;
+    min-height: 80px;
     margin: 95px 0 117px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 103px 0 120px;
+    margin: 101px 0 120px;
   }
 }
 
 .hero__image--index {
-  margin: 89px 0;
+  margin: 90px 19px 86px;
+  width: 282px;
+  height: 214px;
 
   @media (min-width: @tablet-width) {
     width: 460px;
