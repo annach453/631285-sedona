@@ -1,8 +1,9 @@
 .hero {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 158px;
+  height: 158px;
   background-color: @border-top-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,10 +11,16 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    height: 292px;
     background-size: cover;
   }
 
+  @media (min-width: @desktop-width) {
+    height: 301px;
+  }
+
   &--index {
+    height: auto;
     background-size: cover;
   }
 }

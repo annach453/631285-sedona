@@ -109,7 +109,7 @@
   @media (min-width: @tablet-width) {
     width: 400px;
     padding-left: 13px;
-    background: transparent;
+    background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
@@ -125,7 +125,6 @@
   margin: 0 23px;
   background-color: @video-range-color;
   cursor: pointer;
-  z-index: 10;
 
   @media (min-width: @tablet-width) {
     width: 400px;
@@ -168,8 +167,25 @@
 .video__button {
   padding: 0;
   border: 0;
-  background: transparent;
+  background-color: transparent;
+  outline: 0;
   cursor: pointer;
+}
+
+.video__button:hover {
+  .video__icon {
+    @media (max-width: (@tablet-width - 1)) {
+      fill: @video-button-color-hover;
+    }
+  }
+}
+
+.video__button:active {
+  .video__icon {
+    @media (max-width: (@tablet-width - 1)) {
+      fill: @video-button-color-active;
+    }
+  }
 }
 
 .video__icon {

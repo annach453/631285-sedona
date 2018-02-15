@@ -6,6 +6,37 @@
   <title>SEDONA | Оставьте отзыв</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("./preview/sedona-form-mobile.jpg");
+    }
+
+    /* Планшет */
+
+    @media ( min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("./preview/sedona-form-tablet.jpg");
+      }
+    }
+
+    /* Десктоп */
+
+    @media ( min-width: 1200px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("./preview/sedona-form-desktop.png");
+      }
+    }
+  </style>
+  <link href="pixel_glass/styles.css" rel="stylesheet" type="text/css">
+  <script src="pixel_glass/script.js" type="text/javascript"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 
 <body class="page">
@@ -133,29 +164,29 @@
           <h2 class="feedback-form__block-title">Посещенные
             <br>достопримечательности:</h2>
           <div class="feedback-form__checkbox-group">
-            <div class="feedback-form__checkbox-wrapper">
+            <div class="feedback-form__checkbox-wrapper feedback-form__checkbox-wrapper--first">
               <label class="feedback-form__checkbox-label">
-              <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Devil's bridge" checked>
-              <span class="feedback-form__checkbox-name">Мост Дьявола</span>
-            </label>
+                <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Devil's bridge" checked>
+                <span class="feedback-form__checkbox-name">Мост Дьявола</span>
+              </label>
             </div>
-            <div class="feedback-form__checkbox-wrapper">
+            <div class="feedback-form__checkbox-wrapper feedback-form__checkbox-wrapper--rock">
               <label class="feedback-form__checkbox-label">
-              <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Bell mountain" checked>
-              <span class="feedback-form__checkbox-name">Гора-Колокол</span>
-            </label>
+                <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Bell mountain" checked>
+                <span class="feedback-form__checkbox-name">Гора-Колокол</span>
+              </label>
             </div>
-            <div class="feedback-form__checkbox-wrapper">
+            <div class="feedback-form__checkbox-wrapper feedback-form__checkbox-wrapper--park">
               <label class="feedback-form__checkbox-label">
-              <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Slide-park" checked>
-              <span class="feedback-form__checkbox-name">Слайд-парк</span>
-            </label>
+                <input class="feedback-form__checkbox feedback-form__checkbox--checked" type="checkbox" name="attraction" value="Slide-park" checked>
+                <span class="feedback-form__checkbox-name">Слайд-парк</span>
+              </label>
             </div>
-            <div class="feedback-form__checkbox-wrapper">
+            <div class="feedback-form__checkbox-wrapper feedback-form__checkbox-wrapper--last">
               <label class="feedback-form__checkbox-label">
-              <input class="feedback-form__checkbox" type="checkbox" name="attraction" value="Red rocks" >
-              <span class="feedback-form__checkbox-name">Красные скалы</span>
-            </label>
+                <input class="feedback-form__checkbox" type="checkbox" name="attraction" value="Red rocks" >
+                <span class="feedback-form__checkbox-name">Красные скалы</span>
+              </label>
             </div>
           </div>
         </div>
