@@ -14,16 +14,22 @@
 }
 
 .nav--closed {
-  .nav__item {
-    display: none;
-  }
+  @media (max-width: (@tablet-width - 1px)) {
+    .nav__item {
+      display: none;
+    }
 
-  .nav__button--close {
-    display: none;
-  }
+    .nav__button--close {
+      display: none;
+    }
 
-  .nav__item--logo {
-    display: flex;
+    .nav__button--open {
+      display: block;
+    }
+
+    .nav__item--logo {
+      display: flex;
+    }
   }
 }
 
@@ -140,6 +146,7 @@
   }
 
   &--open {
+    display: none;
     bottom: 18px;
     right: 20px;
     width: 23px;

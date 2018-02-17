@@ -7,36 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/picturefill.min.js"></script>
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("./preview/sedona-photo-mobile.jpg");
-    }
-
-    /* Планшет */
-
-    @media ( min-width: 768px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("./preview/sedona-photo-tablet.jpg");
-      }
-    }
-
-    /* Десктоп */
-
-    @media ( min-width: 1200px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("./preview/sedona-photo-desktop.png");
-      }
-    }
-  </style>
-  <link href="pixel_glass/styles.css" rel="stylesheet" type="text/css">
-  <script src="pixel_glass/script.js" type="text/javascript"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="page">
@@ -99,7 +69,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
-              <img class="photo__image" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Закат">
+              <img class="photo__image" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Закат">
             </picture>
           </a>
         </figure>
@@ -125,7 +96,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
-              <img class="photo__image" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус">
+              <img class="photo__image" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Кактус">
             </picture>
           </a>
         </figure>
@@ -151,7 +123,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
-              <img class="photo__image" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога">
+              <img class="photo__image" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" width="280" height="280"
+                alt="Дорога">
             </picture>
           </a>
         </figure>
@@ -177,7 +150,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="photo__image" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост">
+              <img class="photo__image" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="280"
+                height="280" alt="Мост">
             </picture>
           </a>
         </figure>
@@ -299,6 +273,23 @@
       </a>
     </div>
   </footer>
+  <script>
+      var navMain = document.querySelector('.nav');
+      var navOpen = document.querySelector('.nav__button--open');
+      var navClose = document.querySelector('.nav__button--close');
+
+      navMain.classList.add('nav--closed');
+
+      navOpen.addEventListener('click', function() {
+        console.log("open");
+        navMain.classList.remove('nav--closed');
+      });
+
+      navClose.addEventListener('click', function() {
+        console.log("close");
+        navMain.classList.add('nav--closed');
+      });
+    </script>
 </body>
 
 </html>

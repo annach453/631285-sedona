@@ -1,3 +1,14 @@
+
+.text-info__decorated_number() {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  width: 9px;
+  height: 2px;
+  background-color: currentColor;
+}
+
 .text-info {
   text-align: center;
   text-transform: uppercase;
@@ -40,7 +51,7 @@
 
     @media (min-width: @desktop-width) {
       width: 210px;
-      margin: 0 auto;
+      margin: 0 auto 9px;
     }
   }
 }
@@ -60,39 +71,25 @@
 }
 
 .text-info__number {
-  margin: 10px 0;
-}
-
-.text-info__dash {
+  margin-top: 1px;
   position: relative;
+  display: inline-block;
 
   &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
+    .text-info__decorated_number();
     left: -14px;
-    width: 9px;
-    height: 2px;
-    background-color: currentColor;
 
     @media (min-width: @tablet-width) {
-      top: 9px;
+      top: 10px;
     }
   }
 
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    right: -14px;
-    width: 9px;
-    height: 2px;
-    background-color: currentColor;
+    .text-info__decorated_number();
+    right: -15px;
 
     @media (min-width: @tablet-width) {
-      top: 9px;
+      top: 10px;
     }
   }
 }

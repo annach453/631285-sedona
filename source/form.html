@@ -7,37 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/picturefill.min.js"></script>
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url("./preview/sedona-form-mobile.jpg");
-    }
-
-    /* Планшет */
-
-    @media ( min-width: 768px) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url("./preview/sedona-form-tablet.jpg");
-      }
-    }
-
-    /* Десктоп */
-
-    @media ( min-width: 1200px) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url("./preview/sedona-form-desktop.png");
-      }
-    }
-  </style>
-  <link href="pixel_glass/styles.css" rel="stylesheet" type="text/css">
-  <script src="pixel_glass/script.js" type="text/javascript"></script>
-  <!-- // Pixel Glass -->
-
 </head>
 
 <body class="page">
@@ -117,9 +86,7 @@
           </div>
         </div>
         <div class="feedback-form__wrapper feedback-form__wrapper--half-desktop">
-          <h2 class="feedback-form__block-title">
-            <span class="feedback-form--decorated">Контактная информация:</span>
-          </h2>
+          <h2 class="feedback-form__block-title"><span class="feedback-form--decorated">Контактная информация:</span></h2>
           <div class="feedback-form__block feedback-form__block--vertical feedback-form__block--short">
             <label class="feedback-form__label feedback-form__label--contacts" for="phone">
               <span class="feedback-form__desktop-hidden">Контактный </span>телефон<span aria-hidden="true">*</span>:
@@ -168,10 +135,7 @@
           </div>
         </div>
         <div class="feedback-form__wrapper">
-          <h2 class="feedback-form__block-title">
-            <span class="feedback-form--decorated">Посещенные
-              <br>достопримечательности:</span>
-          </h2>
+          <h2 class="feedback-form__block-title"><span class="feedback-form--decorated">Посещенные<br>достопримечательности:</span></h2>
           <div class="feedback-form__checkbox-group">
             <div class="feedback-form__checkbox-wrapper feedback-form__checkbox-wrapper--first">
               <label class="feedback-form__checkbox-label">
@@ -280,6 +244,23 @@
       </div>
     </div>
   </div>
+  <script>
+      var navMain = document.querySelector('.nav');
+      var navOpen = document.querySelector('.nav__button--open');
+      var navClose = document.querySelector('.nav__button--close');
+
+      navMain.classList.add('nav--closed');
+
+      navOpen.addEventListener('click', function() {
+        console.log("open");
+        navMain.classList.remove('nav--closed');
+      });
+
+      navClose.addEventListener('click', function() {
+        console.log("close");
+        navMain.classList.add('nav--closed');
+      });
+    </script>
 </body>
 
 </html>
