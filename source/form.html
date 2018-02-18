@@ -93,7 +93,7 @@
               <span class="feedback-form__desktop-hidden">Контактный </span>телефон<span aria-hidden="true">*</span>:
             </label>
             <div class="feedback-form__input-wrapper">
-              <input class="feedback-form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <input class="feedback-form__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" title="Пример заполнения поля: 8-999-1234567" name="phone" id="phone" placeholder="Введите телефон" required>
               <span class="feedback-form__icon feedback-form__icon--phone"></span>
             </div>
           </div>
@@ -225,6 +225,7 @@
       </a>
     </div>
   </footer>
+  <!-- Для отобраражения модального окна использовать modal--opened-->
   <div class="modal modal--error">
     <div class="modal__item">
       <div class="modal__wrapper">

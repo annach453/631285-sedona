@@ -266,7 +266,7 @@
 }
 
 .feedback-form__input {
-  padding: 15px 20px 17px;
+  padding: 15px 57px 17px 20px;
   width: 130px;
   height: 58px;
   box-sizing: border-box;
@@ -363,9 +363,14 @@
   background-color: @input-color-hover;
 }
 
+
 .feedback-form__radio-label:active .feedback-form__radio-name::before,
 .feedback-form__radio:focus + .feedback-form__radio-name::before {
   background-color: @radio-color-active;
+}
+
+.feedback-form__radio-label:active .feedback-form__radio-name::after {
+  opacity: 0.3;
 }
 
 .feedback-form__radio:checked + .feedback-form__radio-name::after {
@@ -486,6 +491,10 @@
 
 .feedback-form__checkbox:checked + .feedback-form__checkbox-name::after {
   opacity: 1;
+}
+
+.feedback-form__checkbox-label:active .feedback-form__checkbox-name::after {
+  opacity: 0.3;
 }
 
 /*-------------------------------------------------*/
