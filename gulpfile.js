@@ -12,8 +12,14 @@ var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
-
 var del = require("del");
+var webp = require("gulp-webp");
+
+gulp.task("webp", function () {
+  return gulp.src("build/img/**/{photo-,video-}*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("build/img"));
+});
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -82,6 +88,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "images",
+    "webp",
     "style",
     "html",
     done
