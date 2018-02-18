@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/picturefill.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body class="page">
@@ -230,7 +231,7 @@
     <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+          <a class="social__link" href="https://twitter.com" aria-label="Перейти в Twitter">
             <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
@@ -243,7 +244,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/" aria-label="facebook">
+          <a class="social__link" href="https://www.facebook.com/" aria-label="Перейти в Facebook">
             <svg class="social__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
               <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"
@@ -252,7 +253,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/" aria-label="Youtube">
+          <a class="social__link" href="https://www.youtube.com/" aria-label="Перейти на Youtube">
             <svg class="social__svg" role="img" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
               <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"
@@ -273,23 +274,6 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.nav');
-    var navOpen = document.querySelector('.nav__button--open');
-    var navClose = document.querySelector('.nav__button--close');
-
-    navMain.classList.add('nav--closed');
-
-    navOpen.addEventListener('click', function () {
-      console.log("open");
-      navMain.classList.remove('nav--closed');
-    });
-
-    navClose.addEventListener('click', function () {
-      console.log("close");
-      navMain.classList.add('nav--closed');
-    });
-  </script>
 </body>
 
 </html>

@@ -115,11 +115,11 @@
     background-color: @link-color;
     color: @content-bg-color;
   }
+}
 
-  &--dark {
-    @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1)) {
-      background-color: @photo-dark-color;
-    }
+.photo__info--dark {
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1)) {
+    background-color: @photo-dark-color;
   }
 }
 
@@ -184,6 +184,10 @@
 
   @media (min-width: @desktop-width) {
     color: @content-bg-color;
+  }
+
+  &:active {
+    outline: 0;
   }
 }
 

@@ -16,7 +16,7 @@ var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("images", function () {
-  return gulp.src("build/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
@@ -46,16 +46,13 @@ gulp.task("serve", function () {
     cors: true,
     ui: false
   });
-
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]);
 });
 
 gulp.task("copy", function () {
-  return gulp.src(
-    [
+  return gulp.src([
       "source/fonts/**/*{woff,woff2}",
-      "source/img/**",
       "source/js/**"
     ], {
       base: "source"

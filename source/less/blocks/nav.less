@@ -137,12 +137,15 @@
   height: 23px;
   padding: 0;
   border: 0;
-  outline: 0;
-  background-color: inherit;
+  background-color: @content-bg-color;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  &:active {
+    outline: 0;
   }
 
   &--open {

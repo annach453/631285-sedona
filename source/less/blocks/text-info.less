@@ -20,20 +20,20 @@
   @media (min-width: @tablet-width) {
     margin-top: 21px;
   }
+}
 
-  &--index {
-    margin-top: 27px;
-    line-height: 26px;
+.text-info__intro--index {
+  margin-top: 27px;
+  line-height: 26px;
 
-    @media (min-width: @tablet-width) {
-      margin-top: 28px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
   }
+}
 
-  &--primary {
-    margin-top: 26px;
-    line-height: 24px;
-  }
+.text-info__intro--primary {
+  margin-top: 26px;
+  line-height: 24px;
 }
 
 .text-info__title {
@@ -45,14 +45,14 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
+}
 
-  &--white {
-    color: @content-bg-color;
+.text-info__title--white {
+  color: @content-bg-color;
 
-    @media (min-width: @desktop-width) {
-      width: 210px;
-      margin: 0 auto 9px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 210px;
+    margin: 0 auto 9px;
   }
 }
 
@@ -74,22 +74,22 @@
   margin-top: 1px;
   position: relative;
   display: inline-block;
+}
 
-  &::before {
-    .text-info__decorated_number();
-    left: -14px;
+.text-info__number::before {
+  .text-info__decorated_number();
+  left: -14px;
 
-    @media (min-width: @tablet-width) {
-      top: 10px;
-    }
+  @media (min-width: @tablet-width) {
+    top: 10px;
   }
+}
 
-  &::after {
-    .text-info__decorated_number();
-    right: -15px;
+.text-info__number::after {
+  .text-info__decorated_number();
+  right: -15px;
 
-    @media (min-width: @tablet-width) {
-      top: 10px;
-    }
+  @media (min-width: @tablet-width) {
+    top: 10px;
   }
 }
