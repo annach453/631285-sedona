@@ -168,10 +168,6 @@
   padding: 0;
   border: 0;
   background-color: transparent;
-
-  &:active {
-    outline: 0;
-  }
 }
 
 .video__button:hover {
@@ -184,6 +180,8 @@
 
 .video__button:active {
   .video__icon {
+    outline: 0;
+
     @media (max-width: (@tablet-width - 1)) {
       fill: @video-button-color-active;
     }
