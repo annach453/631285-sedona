@@ -141,10 +141,6 @@
   background-color: @content-bg-color;
   background-repeat: no-repeat;
 
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
   &--open {
     display: none;
     bottom: 18px;
@@ -166,6 +162,10 @@
 
   &--visible {
     display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

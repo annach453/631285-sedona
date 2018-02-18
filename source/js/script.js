@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   navClose.addEventListener('click', function () {
-    console.log("close");
     navMain.classList.add('nav--closed');
+    navClose.classList.remove('nav__button--visible');
   });
 });
