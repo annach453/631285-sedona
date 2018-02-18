@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navOpen.addEventListener('click', function () {
     navMain.classList.remove('nav--closed');
-    navClose.style.display = "block";
+    navClose.classList.add('nav__button--visible');
   });
 
   navClose.addEventListener('click', function () {
