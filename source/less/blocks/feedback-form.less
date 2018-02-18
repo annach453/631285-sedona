@@ -266,7 +266,7 @@
 }
 
 .feedback-form__input {
-  padding: 15px 57px 17px 20px;
+  padding: 15px 20px 17px;
   width: 130px;
   height: 58px;
   box-sizing: border-box;
@@ -294,6 +294,10 @@
   }
 }
 
+.feedback-form__input--contacts {
+  padding-right: 70px;
+}
+
 /*radio-------------------------------------------------*/
 
 .feedback-form__radio-wrapper {
@@ -318,6 +322,8 @@
 
 .feedback-form__radio-name {
   position: relative;
+  display: inline-block;
+  margin-right: 10px;
   margin-left: 78px;
   font-size: 18px;
   line-height: 26px;
@@ -402,14 +408,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 200px;
     margin: 18px 0 14px 31px;
     flex-grow: 1;
+    min-width: 200px;
+    max-width: 250px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: auto;
-    margin: 0;
+    margin: 10px 0 0;
     flex-grow: 0;
   }
 }
@@ -424,7 +431,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0;
     justify-content: space-between;
   }
@@ -447,12 +454,18 @@
 
 .feedback-form__checkbox-name {
   position: relative;
+  display: inline-block;
+  margin-right: 10px;
   margin-left: 78px;
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: @title-color;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
 
   &::before {
     content: "";
@@ -516,7 +529,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 23px 0 57px;
-    font-size: 21px;
   }
 }
 

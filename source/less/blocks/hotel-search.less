@@ -44,6 +44,32 @@
 .hotel-search__map-wrapper {
   width: 100%;
   height: 350px;
+  background-color: @map-color;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: @retina-dpi),
+    (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: @retina-dpi),
+    (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
 }
 
 .hotel-search__map {
@@ -52,7 +78,6 @@
   width: 100vw;
   height: 350px;
   overflow: visible;
-  background-color: @map-color;
 }
 
 .hotel-search_button {

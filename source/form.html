@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>SEDONA | Оставьте отзыв</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/picturefill.min.js"></script>
-  <script src="js/script.js"></script>
 </head>
 
 <body class="page">
@@ -93,7 +92,7 @@
               <span class="feedback-form__desktop-hidden">Контактный </span>телефон<span aria-hidden="true">*</span>:
             </label>
             <div class="feedback-form__input-wrapper">
-              <input class="feedback-form__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" title="Пример заполнения поля: 8-999-1234567" name="phone" id="phone" placeholder="Введите телефон" required>
+              <input class="feedback-form__input feedback-form__input--contacts" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" title="Пример заполнения поля: 8-999-1234567" name="phone" id="phone" placeholder="Введите телефон" required>
               <span class="feedback-form__icon feedback-form__icon--phone"></span>
             </div>
           </div>
@@ -102,7 +101,7 @@
               Электронная почта<span aria-hidden="true">*</span>:
             </label>
             <div class="feedback-form__input-wrapper">
-              <input class="feedback-form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <input class="feedback-form__input feedback-form__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               <span class="feedback-form__icon feedback-form__icon--mail"></span>
             </div>
           </div>
@@ -246,6 +245,7 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
