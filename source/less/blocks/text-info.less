@@ -1,3 +1,14 @@
+
+.text-info__decorated_number() {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+  width: 9px;
+  height: 2px;
+  background-color: currentColor;
+}
+
 .text-info {
   text-align: center;
   text-transform: uppercase;
@@ -9,20 +20,20 @@
   @media (min-width: @tablet-width) {
     margin-top: 21px;
   }
+}
 
-  &--index {
-    margin-top: 27px;
-    line-height: 26px;
+.text-info__intro--index {
+  margin-top: 27px;
+  line-height: 26px;
 
-    @media (min-width: @tablet-width) {
-      margin-top: 28px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
   }
+}
 
-  &--primary {
-    margin-top: 26px;
-    line-height: 24px;
-  }
+.text-info__intro--primary {
+  margin-top: 26px;
+  line-height: 24px;
 }
 
 .text-info__title {
@@ -34,14 +45,14 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
+}
 
-  &--white {
-    color: @content-bg-color;
+.text-info__title--white {
+  color: @content-bg-color;
 
-    @media (min-width: @desktop-width) {
-      width: 210px;
-      margin: 0 auto;
-    }
+  @media (min-width: @desktop-width) {
+    width: 210px;
+    margin: 0 auto 9px;
   }
 }
 
@@ -60,39 +71,25 @@
 }
 
 .text-info__number {
-  margin: 10px 0;
+  margin-top: 1px;
+  position: relative;
+  display: inline-block;
 }
 
-.text-info__dash {
-  position: relative;
+.text-info__number::before {
+  .text-info__decorated_number();
+  left: -14px;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: -14px;
-    width: 9px;
-    height: 2px;
-    background-color: currentColor;
-
-    @media (min-width: @tablet-width) {
-      top: 9px;
-    }
+  @media (min-width: @tablet-width) {
+    top: 10px;
   }
+}
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    right: -14px;
-    width: 9px;
-    height: 2px;
-    background-color: currentColor;
+.text-info__number::after {
+  .text-info__decorated_number();
+  right: -15px;
 
-    @media (min-width: @tablet-width) {
-      top: 9px;
-    }
+  @media (min-width: @tablet-width) {
+    top: 10px;
   }
 }

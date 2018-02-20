@@ -1,5 +1,5 @@
 .modal {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: @video-range-block-color;
   display: none;
   position: fixed;
   box-sizing: border-box;
@@ -22,14 +22,16 @@
   text-align: center;
   text-transform: uppercase;
   background-color: @content-bg-color;
-  box-shadow: 0 15px 7px @modal-shadow-color;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
   @media (min-width: @tablet-width) {
     width: 400px;
+  }
+}
 
-    &--success {
-      width: 638px;
-    }
+.modal__item--success {
+  @media (min-width: @tablet-width) {
+    width: 638px;
   }
 }
 
@@ -39,15 +41,15 @@
   @media (min-width: @tablet-width) {
     margin: 50px 35px 35px;
   }
+}
 
-  &--button {
-    margin: 0;
-    padding: 20px;
-    background-color: @page-bg-color;
+.modal__wrapper--button {
+  margin: 0;
+  padding: 20px;
+  background-color: @page-bg-color;
 
-    @media (min-width: @tablet-width) {
-      padding: 45px 91px;
-    }
+  @media (min-width: @tablet-width) {
+    padding: 45px 91px;
   }
 }
 
