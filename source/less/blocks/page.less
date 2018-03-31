@@ -1,12 +1,16 @@
 .page {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  background-color: @page-bg-color;
   font-size: 14px;
   line-height: 1.5;
   font-family: "PT Sans", "Arial", sans-serif;
   color: @font-color;
-  background-color: @page-bg-color;
+}
+
+.page__wrapper {
+  width: 320px;
+  margin: 0 auto;
   box-shadow: @page-shadow;
 
   @media (min-width: @tablet-width) {

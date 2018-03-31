@@ -12,225 +12,227 @@
 </head>
 
 <body class="page">
-  <div class="page__sprite">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-  <header class="header">
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item nav__item--active">
-          <span class="nav__item-link nav__item-link--active">Главная</span>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="photo.html">Фото и видео</a>
-        </li>
-        <li class="nav__item nav__item--logo">
-          <span class="nav__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-              <img src="./img/logo-sedona-mobile.svg" class="nav__logo-svg" width="102" height="83" alt="Логотип Седона">
-            </picture>
-          </span>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-      <button class="nav__button nav__button--close" aria-label="Закрыть меню">
-        <svg role="img" width="23" height="22">
-          <use xlink:href="#icon-cross"></use>
-        </svg>
-      </button>
-      <button class="nav__button nav__button--open" aria-label="Открыть меню">
-        <svg role="img" width="23" height="21">
-          <use xlink:href="#icon-menu"></use>
-        </svg>
-      </button>
-    </nav>
-  </header>
-  <div class="hero hero--index">
-    <img class="hero__image hero__image--index" src="./img/text-sedona-index.svg" width="282" height="214" alt="Sedona">
-  </div>
-  <main class="main">
-    <div class="main__text-info main__text-info--index text-info">
-      <h1 class="text-info__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="text-info__intro text-info__intro--index">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  <div class="page__wrapper">
+    <div class="page__sprite">
+      <include src="build/img/sprite.svg"></include>
     </div>
-    <section class="main__reasons reasons">
-      <div class="reasons__item reasons__item--primary reasons__item--triangle">
-        <div class="reasons__text-info text-info">
-          <h2 class="text-info__title text-info__title--white">
+    <header class="header">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <span class="nav__item-link nav__item-link--active">Главная</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="nav__item nav__item--logo">
+            <span class="nav__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
+                <img src="./img/logo-sedona-mobile.svg" class="nav__logo-svg" width="102" height="83" alt="Логотип Седона">
+              </picture>
+            </span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="nav__button nav__button--close" aria-label="Закрыть меню">
+          <svg role="img" width="23" height="22">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <button class="nav__button nav__button--open" aria-label="Открыть меню">
+          <svg role="img" width="23" height="21">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <div class="hero hero--index">
+      <img class="hero__image hero__image--index" src="./img/text-sedona-index.svg" width="282" height="214" alt="Sedona">
+    </div>
+    <main class="main">
+      <div class="main__text-info main__text-info--index text-info">
+        <h1 class="text-info__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="text-info__intro text-info__intro--index">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <section class="main__reasons reasons">
+        <div class="reasons__item reasons__item--primary reasons__item--triangle">
+          <div class="reasons__text-info text-info">
+            <h2 class="text-info__title text-info__title--white">
             Настоящий городок
           </h2>
-          <span class="text-info__number">
-            №1
-          </span>
-          <p class="text-info__intro">
-            Cедона не аттракцион для туристов, там течет своя жизнь
-          </p>
-        </div>
-      </div>
-      <div class="reasons__image reasons__image--city">
-      </div>
-      <ul class="reasons__list reason">
-        <li class="reason__item">
-          <div class="reason__icon">
-            <svg class="reason__svg reason__svg--accomodation" aria-hidden="true" role="presentation" height="37" width="42">
-              <use xlink:href="#icon-house"></use>
-            </svg>
+            <span class="text-info__number">
+              №1
+            </span>
+            <p class="text-info__intro">
+              Cедона не аттракцион для туристов, там течет своя жизнь
+            </p>
           </div>
-          <div class="reason__item-wrapper">
-            <h2 class="reason__item-title">
+        </div>
+        <div class="reasons__image reasons__image--city">
+        </div>
+        <ul class="reasons__list reason">
+          <li class="reason__item">
+            <div class="reason__icon">
+              <svg class="reason__svg reason__svg--accomodation" aria-hidden="true" role="presentation" height="37" width="42">
+                <use xlink:href="#icon-house"></use>
+              </svg>
+            </div>
+            <div class="reason__item-wrapper">
+              <h2 class="reason__item-title">
               Жилье
             </h2>
-            <p class="reason__item-description">
-              Рекомендуем пожить
-              <span class="reason__nowrap-tablet">в настоящем</span> мотеле, все как в кино!
-            </p>
-          </div>
-        </li>
-        <li class="reason__item reason__item--souvenirs">
-          <div class="reason__icon">
-            <svg class="reason__svg reason__svg--souvenirs" aria-hidden="true" role="presentation" height="37" width="42">
-              <use xlink:href="#icon-gift"></use>
-            </svg>
-          </div>
-          <div class="reason__item-wrapper">
-            <h2 class="reason__item-title">
+              <p class="reason__item-description">
+                Рекомендуем пожить
+                <span class="reason__nowrap-tablet">в настоящем</span> мотеле, все как в кино!
+              </p>
+            </div>
+          </li>
+          <li class="reason__item reason__item--souvenirs">
+            <div class="reason__icon">
+              <svg class="reason__svg reason__svg--souvenirs" aria-hidden="true" role="presentation" height="37" width="42">
+                <use xlink:href="#icon-gift"></use>
+              </svg>
+            </div>
+            <div class="reason__item-wrapper">
+              <h2 class="reason__item-title">
               Сувениры
             </h2>
-            <p class="reason__item-description">
-              Не только китайского,
-              <span class="reason__nowrap-desktop">но и местного производства!</span>
-            </p>
-          </div>
-        </li>
-        <li class="reason__item">
-          <div class="reason__icon">
-            <svg class="reason__svg reason__svg--food" aria-hidden="true" role="presentation" height="35" width="40">
-              <use xlink:href="#icon-burger"></use>
-            </svg>
-          </div>
-          <div class="reason__item-wrapper">
-            <h2 class="reason__item-title">
+              <p class="reason__item-description">
+                Не только китайского,
+                <span class="reason__nowrap-desktop">но и местного производства!</span>
+              </p>
+            </div>
+          </li>
+          <li class="reason__item">
+            <div class="reason__icon">
+              <svg class="reason__svg reason__svg--food" aria-hidden="true" role="presentation" height="35" width="40">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+            </div>
+            <div class="reason__item-wrapper">
+              <h2 class="reason__item-title">
               Еда
             </h2>
-            <p class="reason__item-description">
-              Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
-            </p>
-          </div>
-        </li>
-      </ul>
-      <div class="reasons__item reasons__item--primary reasons__item--last">
-        <div class="reasons__text-info text-info">
-          <h2 class="text-info__title text-info__title--white">
+              <p class="reason__item-description">
+                Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="reasons__item reasons__item--primary reasons__item--last">
+          <div class="reasons__text-info text-info">
+            <h2 class="text-info__title text-info__title--white">
             Там есть мост&nbsp;дьявола
           </h2>
-          <span class="text-info__number">
-            №2
-          </span>
-          <p class="text-info__intro">
-            Да, по нему можно пройти! Если вы осмелитесь, конечно
-          </p>
+            <span class="text-info__number">
+              №2
+            </span>
+            <p class="text-info__intro">
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reasons__image reasons__image--bridge">
-      </div>
-      <div class="reasons__item reasons__item--secondary reasons__item--no-separator">
-        <div class="reasons__text-info text-info text-info">
-          <h2 class="text-info__title text-info__title--small">
+        <div class="reasons__image reasons__image--bridge">
+        </div>
+        <div class="reasons__item reasons__item--secondary reasons__item--no-separator">
+          <div class="reasons__text-info text-info text-info">
+            <h2 class="text-info__title text-info__title--small">
             Небольшая площадь
           </h2>
-          <span class="text-info__number">
-            №3
-          </span>
-          <p class="text-info__intro">
-            Все интересные места находятся очень близко
-          </p>
+            <span class="text-info__number">
+              №3
+            </span>
+            <p class="text-info__intro">
+              Все интересные места находятся очень близко
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reasons__item reasons__item--secondary">
-        <div class="reasons__text-info text-info">
-          <h2 class="text-info__title text-info__title--small">
+        <div class="reasons__item reasons__item--secondary">
+          <div class="reasons__text-info text-info">
+            <h2 class="text-info__title text-info__title--small">
             Красивая дорога
           </h2>
-          <span class="text-info__number">
-            №4
-          </span>
-          <p class="text-info__intro">
-            Ехать в седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!
-          </p>
+            <span class="text-info__number">
+              №4
+            </span>
+            <p class="text-info__intro">
+              Ехать в седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reasons__item reasons__item--secondary">
-        <div class="reasons__text-info text-info">
-          <h2 class="text-info__title text-info__title--small">
+        <div class="reasons__item reasons__item--secondary">
+          <div class="reasons__text-info text-info">
+            <h2 class="text-info__title text-info__title--small">
             Мало туристов
           </h2>
-          <span class="text-info__number">
-            №5
-          </span>
-          <p class="text-info__intro">
-            Большинство едет в гранд каньон и толпится там
-          </p>
+            <span class="text-info__number">
+              №5
+            </span>
+            <p class="text-info__intro">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="main__hotel-search hotel-search">
-      <div class="hotel-search__wrapper">
-        <h2 class="hotel-search__title">
+      </section>
+      <section class="main__hotel-search hotel-search">
+        <div class="hotel-search__wrapper">
+          <h2 class="hotel-search__title">
           Заинтересовались?
         </h2>
-        <p class="hotel-search__text">
-          Укажите предполагаемые даты поездки,
-          <span class="hotel-search__nowrap-tablet">и мы покажем вам лучшие предложения</span> гостиниц в седоне
-        </p>
-        <a class="hotel-search_button button" href="#">Найти гостиницу</a>
+          <p class="hotel-search__text">
+            Укажите предполагаемые даты поездки,
+            <span class="hotel-search__nowrap-tablet">и мы покажем вам лучшие предложения</span> гостиниц в седоне
+          </p>
+          <a class="hotel-search_button button" href="#">Найти гостиницу</a>
+        </div>
+        <div class="hotel-search__map" id="map">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__hashtag">#visitSEDONA</h2>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com" aria-label="Перейти в Twitter">
+              <svg class="social__svg" width="20" height="20" role="img">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/" aria-label="Перейти в Facebook">
+              <svg class="social__svg" width="20" height="20" role="img">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/" aria-label="Перейти на Youtube">
+              <svg class="social__svg" width="20" height="20" role="img">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="hotel-search__map" id="map">
+      <div class="footer__copyright">
+        Разработано
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+          <svg class="footer__svg" width="27" height="34" role="img">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <h2 class="footer__hashtag">#visitSEDONA</h2>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="https://twitter.com" aria-label="Перейти в Twitter">
-            <svg class="social__svg" width="20" height="20" role="img">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/" aria-label="Перейти в Facebook">
-            <svg class="social__svg" width="20" height="20" role="img">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/" aria-label="Перейти на Youtube">
-            <svg class="social__svg" width="20" height="20" role="img">
-              <use xlink:href="#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright">
-      Разработано
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
-        <svg class="footer__svg" width="27" height="34" role="img">
-          <use xlink:href="#logo-htmlacademy"></use>
-        </svg>
-      </a>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="js/script.js"></script>
   <script src="js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmX4GPwNuEYY6SQY24gUiK6pHymTO1rcs&callback=initMap"></script>
